@@ -15,7 +15,7 @@ import logging
 # hyper-parameters
 start = time.time()
 manufacturer = 'NVIDIA'
-architectures = ['Volta'] # ['Ampere', 'Turing', 'Volta']
+architectures = ['Ampere', 'Turing', 'Volta']
 sort = 'released'
 mobile = 'No'
 delay = 5
