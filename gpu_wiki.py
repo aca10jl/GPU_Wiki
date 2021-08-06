@@ -74,7 +74,7 @@ for architecture in architectures:
 						gpu = gpu.append(data, ignore_index=True)
 					else:
 						logging.warning('Got {} responses from the server.'.format(response.status_code))
-				except:
+				except requests.exceptions.RequestException as error:
 					logging.exception('{}'.format(error))
 				logging.info('Take a nap.')
 				time.sleep(random.randint(delay-1, delay+2))
